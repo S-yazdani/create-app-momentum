@@ -1,0 +1,197 @@
+@font-face {
+  font-family: Sahel;
+  src: url("../fonts/Sahel.eot");
+  src: url("../fonts/Sahel.ttf") format("ttf"), url("../fonts/Sahel.woff") format("woff");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Nastaliq;
+  src: url("../fonts/IranNastaliq.ttf");
+  font-weight: normal;
+}
+
+.change-lang {
+  font-family: "Nunito", sans-serif;
+  border-radius: 2px;
+  font-weight: 800;
+  color: greenyellow;
+  outline: none;
+}
+
+.change-lang :selected {
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.clock {
+  font-family: "Dancing Script", cursive;
+  font-size: 180px;
+  letter-spacing: 8px;
+}
+
+h1 {
+  color: snow;
+  font-family: "Dancing Script", cursive;
+  font-weight: 300;
+  letter-spacing: 2px;
+  font-size: 45px;
+  text-align: center;
+}
+
+h2 {
+  color: snow;
+  font-family: "Nunito", sans-serif;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+
+.question {
+  color: snow;
+  font-family: "Nunito", sans-serif;
+  font-weight: 900;
+  letter-spacing: 2px;
+  font-size: 45px;
+  text-align: center;
+}
+
+.text-today {
+  color: snow;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 500;
+  letter-spacing: 2px;
+  font-size: 45px;
+  text-align: center;
+}
+
+.big-checkbox {
+  width: 25px;
+  height: 25px;
+}
+
+span {
+  font-size: 20;
+  color: red;
+  cursor: pointer;
+}
+
+.inputfile {
+  outline: none;
+  width: 500px;
+  padding: 15px;
+  outline: none;
+  border: none;
+  background: none;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 0px 16px 0px 16px;
+  transition: 0.4s;
+  box-shadow: 0px 0px 16px rgba(0, 0, 8, 0.25);
+}
+
+.inputfile:focus {
+  background-color: rgba(255, 255, 255, 0.75);
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.25);
+  border-radius: 16px 0px 16px 0px;
+}
+
+label {
+  color: snow;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 2000;
+  letter-spacing: 2px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#weatherId {
+  background-image: url("../assets/picture/2");
+  background-size: cover;
+  background-position: bottom;
+}
+
+main {
+  height: 100vh;
+  padding: 25px;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.75));
+}
+
+.search-box {
+  margin-bottom: 30px;
+}
+
+.search-box .search-bar {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  outline: none;
+  border: none;
+  background: none;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 0px 16px 0px 16px;
+  transition: 0.4s;
+  box-shadow: 0px 0px 16px rgba(0, 0, 8, 0.25);
+}
+
+.search-box .search-bar:focus {
+  background-color: rgba(255, 255, 255, 0.75);
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.25);
+  border-radius: 16px 0px 16px 0px;
+}
+
+.location-box .location {
+  font-family: "Dancing Script", cursive;
+  color: #fff;
+  font-size: 32px;
+  font-weight: 500;
+  text-align: center;
+  text-shadow: 1px 3px rgba(0, 0, 0, 0.25);
+}
+
+.location-box .date {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 300;
+  text-align: center;
+  font-style: italic;
+}
+
+.weather-box {
+  text-align: center;
+}
+
+.weather-box .temp {
+  display: inline-block;
+  padding: 10px 25px;
+  color: #fff;
+  font-size: 80px;
+  font-weight: 900;
+  text-shadow: 3px 6px rgba(0, 0, 0, 0.25);
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 16px;
+  margin: 30px 0px;
+  box-shadow: 3px 6px rgba(0, 0, 0, 0.25);
+}
+
+.weather-box .weather {
+  font-family: "Dancing Script", cursive;
+  color: #fff;
+  font-size: 48px;
+  font-weight: 400;
+  font-style: italic;
+  text-shadow: 3px 6px rgba(0, 0, 0, 0.25);
+}
+
+#btn-show {
+  margin-top: 5px;
+  border: none;
+  outline: none;
+  font-family: "Nunito", sans-serif;
+  font-weight: 1000;
+  color: green;
+  box-shadow: 3px 6px rgba(0, 0, 0, 0.25);
+  background-color: rgba(255, 255, 255, 0.75);
+}
+/*# sourceMappingURL=main.css.map */
