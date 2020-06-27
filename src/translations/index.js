@@ -1,5 +1,5 @@
-import en from './en';
-import fa from './fa';
+import en from './en.json';
+import fa from './fa.json';
 
 export default {
   en,

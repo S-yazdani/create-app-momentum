@@ -1,8 +1,6 @@
 <template>
     <div class="container">
-    
 <br>
-
 <div class="btn-group change-lang">
   <router-link to='/en' class="btn btn-default change-lang" active-class="active" exact>EN</router-link>
   <router-link to='/fa' class="btn btn-default change-lang" active-class="active" >FA</router-link>
@@ -10,7 +8,6 @@
 
 <br>
 
-<h1 class="col-xs-12 animate__animated animate__fadeIn "> {{ $t('greeting') }} </h1>
 
 <form class="form-horizontal col-md-4 col-xs-4 col-xs-offset-4">
     <br><br><br>
@@ -26,11 +23,8 @@
         <input type="email" id="email" class="form-control " placeholder="Enter your Family">
     </div>
     <hr>
-    
   <router-link :to="`/${$i18n.locale}/mainpage`" class="btn btn-success">{{$t('Sumbit')}}</router-link>
-    
- 
-    
+  
 </form>
 
     </div>
@@ -65,3 +59,29 @@ watch: {
 },
 }
 </script>
+
+
+<style  scoped>
+h2{
+ text-align: center;
+}
+label{
+color: #fff;
+font-family : "Nunito", sans-serif;
+font-weight: 2000;
+letter-spacing: 2px;
+
+}
+
+
+.change-lang{
+  font-family : "Nunito", sans-serif;
+  border-radius: 2px;
+  font-weight: 800;
+  outline: none;
+ color: lawngreen;
+}
+ .change-lang:selected{
+  background-color:rgba(0, 0, 0, 0.75);
+  }
+</style>

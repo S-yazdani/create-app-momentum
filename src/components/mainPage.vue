@@ -2,25 +2,25 @@
 <div>
 <div class="row">
 
-  <div class="col-sm-3 pull-right">
-    <app-weatherWidget></app-weatherWidget>
-  </div>
-<div class="col-sm-9 text-center ">
-<app-time></app-time>
-   <br>
+<div class="col-xs-10 col-md-11">
+ <app-time></app-time>
+</div>
 
-   
-   <h1 class="question">{{$t('Question')}} </h1>
-   <br>
+<div class="col-xs-2 col-md-1">
+ <app-weatherWidget></app-weatherWidget>
+</div>
+
+</div>
 
 
-   <app-answer></app-answer>
+
+
+
+<div class="clearfix"></div>
+
+
+ <app-answer></app-answer>
   
-</div>
-</div>
-
-
-
 </div>
 </template>
 
