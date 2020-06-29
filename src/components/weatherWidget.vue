@@ -34,13 +34,19 @@ data(){
     url_base:'https://api.openweathermap.org/data/2.5/',
     id_city:112931,
     query:'tehran',
-    weather:{},
+    weather:{
+      main : {
+        temp : 0
+      }
+    },
     showDetail:true,
     url_icon:'http://openweathermap.org/img/wn/10d@2x.png',
   }
 },
 created(){
-     fetch(`${this.url_base}weather?q=${this.query}&units=metric&APPID=${this.api_key}`).then(res=>{return res.json()})
+     fetch(`${this.url_base}weather?q=${this.query}&units=metric&APPID=${this.api_key}`).then(res=>{
+       return res.json()
+       })
   .then(this.setResults)
 },
 methods:{
@@ -49,7 +55,7 @@ methods:{
     this.weather=results
   },
  fetchweather(){
-   this.showDetail=!this.showDetail
+   this.showDetail = !this.showDetail
  },
 
 },
